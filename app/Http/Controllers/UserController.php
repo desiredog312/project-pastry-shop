@@ -77,7 +77,8 @@ class UserController extends Controller
                     "email" => $request->emailReg,
                     "password" => $request->password,
                     "tgllahir" => $request->tgllahir,
-                    "saldo" => 0
+                    "saldo" => 0,
+                    "role" => "user"
                 ]);
 
                 return redirect()->route("login")->with('msg', "Berhasil Register");
